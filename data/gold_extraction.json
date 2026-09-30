@@ -1,0 +1,95 @@
+{
+  "description": "Небольшая ручная разметка для метрик качества извлечения (бонус ТЗ)",
+  "items": [
+    {
+      "record": {
+        "source": "pubmed",
+        "source_id": "gold001",
+        "title": "Infographic: landmark trials in neuro-ophthalmology",
+        "abstract": "Summary figure of REVERSE trial results.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/gold001/",
+        "journal_or_status": "Science Translational Medicine",
+        "raw": {"publication_types": ["Review"]}
+      },
+      "expected": {
+        "study_type": "other",
+        "intervention_kind": "unknown"
+      }
+    },
+    {
+      "record": {
+        "source": "pubmed",
+        "source_id": "gold002",
+        "title": "Leber hereditary optic neuropathy: Bilateral improvement of visual acuity following gene therapy by unilateral injection",
+        "abstract": "A patient with LHON showed bilateral visual acuity improvement after gene therapy.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/gold002/",
+        "journal_or_status": "Med Sci (Paris)",
+        "raw": {"publication_types": ["Journal Article"]}
+      },
+      "expected": {
+        "study_type": "case_report",
+        "intervention_kind": "mito_therapy"
+      }
+    },
+    {
+      "record": {
+        "source": "pubmed",
+        "source_id": "gold003",
+        "title": "MitoQ randomized controlled trial in Parkinson disease",
+        "abstract": "In this randomized controlled trial, 120 patients received MitoQ or placebo.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/gold003/",
+        "journal_or_status": "Neurology",
+        "raw": {"publication_types": ["Randomized Controlled Trial"]}
+      },
+      "expected": {
+        "study_type": "rct",
+        "intervention_kind": "mito_therapy"
+      }
+    },
+    {
+      "record": {
+        "source": "pubmed",
+        "source_id": "gold004",
+        "title": "Idebenone trial in Japanese patients with LHON: a prospective interventional study",
+        "abstract": "Prospective study of idebenone in patients with Leber hereditary optic neuropathy.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/gold004/",
+        "journal_or_status": "Japanese Journal of Ophthalmology",
+        "raw": {"publication_types": ["Clinical Trial"]}
+      },
+      "expected": {
+        "study_type": "cohort",
+        "intervention_kind": "standard_of_care"
+      }
+    },
+    {
+      "record": {
+        "source": "clinicaltrials",
+        "source_id": "NCT07406854",
+        "title": "Phase 3 gene therapy for LHON associated with ND4 mutation",
+        "abstract": "Status: Recruiting. Phases: PHASE3.",
+        "url": "https://clinicaltrials.gov/study/NCT07406854",
+        "journal_or_status": "Recruiting",
+        "raw": {"phases": ["PHASE3"], "overallStatus": "Recruiting"}
+      },
+      "expected": {
+        "study_type": "other",
+        "intervention_kind": "mito_therapy"
+      }
+    },
+    {
+      "record": {
+        "source": "pubmed",
+        "source_id": "gold005",
+        "title": "NMN supplementation improves muscle endurance in older adults: randomized trial",
+        "abstract": "Randomized trial of nicotinamide mononucleotide (NMN) versus placebo in sarcopenia.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/gold005/",
+        "journal_or_status": "Cell Metabolism",
+        "raw": {"publication_types": ["Randomized Controlled Trial"]}
+      },
+      "expected": {
+        "study_type": "rct",
+        "intervention_kind": "mito_therapy"
+      }
+    }
+  ]
+}

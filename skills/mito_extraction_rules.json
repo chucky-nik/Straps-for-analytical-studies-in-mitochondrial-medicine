@@ -1,0 +1,86 @@
+{
+  "mitochondrial_agents": [
+    "MitoQ",
+    "mitoquinone",
+    "SkQ1",
+    "elamipretide",
+    "SS-31",
+    "SS31",
+    "urolithin A",
+    "nicotinamide riboside",
+    "NMN",
+    "nicotinamide mononucleotide",
+    "lenadogene nolparvovec",
+    "LUMEVOQ",
+    "mitochondrial transplantation",
+    "mitochondrial replacement"
+  ],
+  "not_mito_targeted_despite_overlap": [
+    "idebenone",
+    "coenzyme Q10",
+    "CoQ10",
+    "vitamin C",
+    "vitamin E",
+    "N-acetylcysteine"
+  ],
+  "diseases": [
+    "lhon",
+    "primary_mito",
+    "parkinson",
+    "heart_failure",
+    "sarcopenia",
+    "iri"
+  ],
+  "standard_comparators": {
+    "lhon": ["idebenone", "supportive care", "smoking cessation"],
+    "primary_mito": ["cofactor cocktail", "supportive care", "CoQ10"],
+    "parkinson": ["levodopa", "dopamine agonist", "MAO-B inhibitor", "DBS"],
+    "heart_failure": ["ARNI", "ACE inhibitor", "beta blocker", "MRA", "SGLT2 inhibitor"],
+    "sarcopenia": ["resistance training", "protein supplementation", "standard care"],
+    "iri": ["early reperfusion", "PCI", "thrombolysis", "standard cardioprotection"]
+  },
+  "forbidden_claims": [
+    "cure",
+    "cures",
+    "guaranteed",
+    "clinical recommendation",
+    "replace standard therapy",
+    "replaces standard therapy",
+    "should be prescribed",
+    "must take",
+    "safe for everyone",
+    "без побочных эффектов",
+    "излечивает",
+    "вылечит",
+    "гарантированно",
+    "заменяет стандарт",
+    "вместо леводопы",
+    "вместо levodopa",
+    "рекомендую пациенту",
+    "вам следует принимать",
+    "назначьте препарат",
+    "принимайте",
+    "дозировка для лечения",
+    "prescribe",
+    "start the patient on"
+  ],
+  "harmful_overclaim_patterns": [
+    "лучше стандарта лечения",
+    "superior to standard",
+    "replaces SoC",
+    "доказано излечивает",
+    "clinically proven cure",
+    "no risk",
+    "без риска",
+    "можно не соблюдать",
+    "отменить стандартную терапию",
+    "можно отменить стандартную",
+    "stop standard therapy",
+    "discontinue standard of care"
+  ],
+  "matching_rules": {
+    "gene_mtdna_requires_any": ["lenadogene", "lumevoq", "rAAV2", "allotopic", "ND4 gene", "gene therapy"],
+    "gene_mtdna_requires_context": ["LHON", "Leber", "MT-ND4", "ND4", "optic neuropath"],
+    "loose_tokens_forbidden_alone": ["nd4", "gene therapy", "nad", "skq"]
+  }
+}
